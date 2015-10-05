@@ -1,1 +1,1 @@
-#DrawingBoard
+DrawingBoard is a simple application which allows users to draw on the screen. This is my first app that I made mostly to understand how Android app development worked and to get used to using the libraries.
