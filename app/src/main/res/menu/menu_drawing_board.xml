@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".DrawingBoard">
+    <item android:id="@+id/action_undo"
+        android:title="@string/undo"
+        android:icon="@drawable/undo"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_redo"
+        android:title="@string/redo"
+        android:icon="@drawable/redo"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_quick_colors"
+          android:title="@string/quick_colors"
+          android:icon="@drawable/black_square"
+          app:showAsAction="ifRoom" >
+        <menu>
+            <item android:id="@+id/quick_color_black"
+                android:title="@string/black"
+                android:icon="@drawable/black_square"/>
+            <item android:id="@+id/quick_color_red"
+                android:title="@string/red"
+                android:icon="@drawable/red_square"/>
+            <item android:id="@+id/quick_color_green"
+                android:title="@string/green"
+                android:icon="@drawable/green_square"/>
+            <item android:id="@+id/quick_color_blue"
+                android:title="@string/blue"
+                android:icon="@drawable/blue_square"/>
+            <item android:id="@+id/quick_color_white"
+                android:title="@string/white"
+                android:icon="@drawable/white_square"/>
+        </menu>
+    </item>
+    <item android:id="@+id/action_more_colors"
+          android:title="@string/more_colors"
+          app:showAsAction="never" />
+    <item android:id="@+id/action_brush_size"
+        android:title="@string/brush_size"
+        app:showAsAction="never" />
+</menu>

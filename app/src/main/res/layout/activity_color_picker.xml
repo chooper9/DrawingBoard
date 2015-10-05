@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/blue_seek_bar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="8dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="@string/blue_seek_title"/>
+
+    <SeekBar
+        android:id="@+id/blue_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="12dp"
+        android:layout_toEndOf="@id/blue_seek_bar_text"
+        android:layout_alignParentBottom="true"
+        android:max="255"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/green_seek_bar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/blue_seek_bar_text"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="8dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="@string/green_seek_title"/>
+
+    <SeekBar
+        android:id="@+id/green_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="12dp"
+        android:layout_above="@id/blue_seek_bar"
+        android:layout_toEndOf="@id/green_seek_bar_text"
+        android:max="255"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/red_seek_bar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/green_seek_bar_text"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="8dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="@string/red_seek_title"/>
+
+    <SeekBar
+        android:id="@+id/red_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="12dp"
+        android:layout_above="@id/green_seek_bar"
+        android:layout_toEndOf="@id/red_seek_bar_text"
+        android:max="255"
+        android:progress="0"/>
+
+    <ImageView
+        android:id="@+id/color_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/color_preview_content" />
+
+</RelativeLayout>

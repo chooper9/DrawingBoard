@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DrawingBoard</string>
+    <string name="quick_colors">Quick Colors</string>
+    <string name="black">Black</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="white">White</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="brush_size">Brush Size</string>
+    <string name="more_colors">More Colors</string>
+    <string name="title_color_picker">Select Color</string>
+    <string name="red_seek_title">R</string>
+    <string name="green_seek_title">G</string>
+    <string name="blue_seek_title">B</string>
+    <string name="color_preview_content">Preview</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
